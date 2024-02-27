@@ -129,5 +129,25 @@ public class App {
                 System.out.println("Operation Number is not Valid!");
         }
 
+
+        Person simon = new Person(); // object
+        simon.firstName = "Simon";
+        simon.lastName = "Elbrink";
+        simon.age = 30;
+
+        Person marcus = new Person();
+        marcus.firstName = "Marcus";
+        // ...
+
+        Person person3 = new Person();
+        person3.firstName="Test";
+
+        System.out.println(simon.firstName);
+        System.out.println(simon.lastName);
+        System.out.println(marcus.lastName); // null
+        System.out.println(marcus.age); // 0
+
+
+        Calculator.displayMenu();
     }
 }
