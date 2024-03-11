@@ -28,7 +28,9 @@ public class Car {
         // We can access instance and static methods and fields
         // Car.incrementCounter();
         // this.getBrand();
-        return "ID: " + this.id + ", Brand: " + brand + ", Year: " + year;
+        // this: Reference to the Current Object -> used to differentiate instance variables from local variables when they have the same name.
+        int year = 2020;
+        return "ID: " + this.id + ", Brand: " + brand + ", Year: " + this.year;
     }
 
     public String getBrand(){
@@ -38,7 +40,7 @@ public class Car {
     public static void incrementCounter(){
         // cannot directly access instance fields and methods.
         // getBrand();
-        // this.id = 10;'
+        // this.id = 10;
         // int test = 10; // it is a local variable
         count++;
     }
